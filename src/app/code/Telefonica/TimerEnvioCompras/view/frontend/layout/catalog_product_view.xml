@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <head>
+        <css src="Telefonica_TimerEnvioCompras::css/source/_custom.css"/>
+        <!-- <script src="Telefonica_TimerEnvioCompras::js/custom.js"/>     -->
+        </head>
+    <body>
+        <referenceContainer name="product.info.addtocart">
+            <block class="Magento\Framework\View\Element\Template" name="custom.product.html" template="Telefonica_TimerEnvioCompras::custom_html.phtml" after="product.info.addtocart"/>
+        </referenceContainer>
+    </body>
+</page>

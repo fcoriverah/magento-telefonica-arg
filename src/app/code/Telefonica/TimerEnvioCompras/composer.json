@@ -1,0 +1,22 @@
+{
+    "name": "telefonica/module-timerenviocompras",
+    "description": "Timer donde se puede observar el tiempo restante para enviar la compra el mismo dia o al siguiente disponible.",
+    "type": "magento2-module",
+    "license": "GPL-3.0",
+    "authors": [
+        {
+            "name": "Mage2Gen",
+            "email": "info@mage2gen.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "Telefonica\\TimerEnvioCompras\\": ""
+        }
+    }
+}

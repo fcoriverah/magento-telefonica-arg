@@ -1,0 +1,19 @@
+<div>
+    <p class="texto-tiempo-envio"></p>
+</div>
+
+<!-- Asi no me deja ejecutar el script en el Checkout, en lo demas si me funcionaba -->
+<!-- <script type="text/javascript">
+    require(['jquery', 'customJs'], function($, customJs) {;
+        customJs.timerHoraMensaje();
+    });
+</script> -->
+
+<!-- La unica manera que me dejo ejecutar el JS fue con el secureRenderer (debido al modulo CSP) -->
+<?= $secureRenderer->renderTag(
+        'script', 
+        ['type' => 'text/javascript'], 
+        "require(['jquery', 'customJs'], function($, customJs) { customJs.timerHoraMensaje(); });", 
+        false
+    ); 
+?>
